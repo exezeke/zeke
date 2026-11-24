@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#8B5CF6</color>
+    <color name="primary_dark">#5B21B6</color>
+    <color name="accent">#A78BFA</color>
+
+    <!-- Deep Vibrant Purple Gradient -->
+    <color name="gradient_start">#3B0764</color>
+    <color name="gradient_end">#6B21A8</color>
+
+    <color name="card_bg">#FFFFFF</color>
+    <color name="screen_bg">#FAF5FF</color>
+    <color name="search_bg">#F3E8FF</color>
+
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+
+    <!-- Dimension Badge Colors -->
+    <color name="overworld_bg">#DCFCE7</color>
+    <color name="overworld_text">#15803D</color>
+    <color name="nether_bg">#FEE2E2</color>
+    <color name="nether_text">#B91C1C</color>
+    <color name="end_bg">#F3E8FF</color>
+    <color name="end_text">#7E22CE</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

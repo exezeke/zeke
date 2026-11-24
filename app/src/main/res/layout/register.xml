@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A2B5C"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- Top Header: School Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manila_cathedral_school"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paascu_accredited_ii"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- App Brand Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WAYLEDGE"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:letterSpacing="0.05" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your account to get started"
+            android:textSize="13sp"
+            android:textColor="#E0E0E0"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Main Card Container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center_horizontal">
+
+                <!-- School Icon / Building Illustration Placeholder -->
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    app:tint="#1A2B5C"
+                    android:contentDescription="@string/school_logo"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Register Title with Dividers -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#B0BEC5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#1A2B5C"
+                        android:layout_marginHorizontal="12dp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="#B0BEC5" />
+                </LinearLayout>
+
+                <!-- Full Name Input -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A2B5C"
+                    android:layout_marginBottom="6dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#F4F6F8"
+                    android:layout_marginBottom="12dp">
+
+                    <EditText
+                        android:id="@+id/registerFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="Enter your full name"
+                        android:textSize="13sp"
+                        android:textColor="#333333"
+                        android:textColorHint="#9E9E9E"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="16dp" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Username or Email Input -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Username or Email"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A2B5C"
+                    android:layout_marginBottom="6dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#F4F6F8"
+                    android:layout_marginBottom="12dp">
+
+                    <EditText
+                        android:id="@+id/registerUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="Enter your username or email"
+                        android:textSize="13sp"
+                        android:textColor="#333333"
+                        android:textColorHint="#9E9E9E"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="16dp" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Password Input -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A2B5C"
+                    android:layout_marginBottom="6dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#F4F6F8"
+                    android:layout_marginBottom="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="16dp">
+
+                        <EditText
+                            android:id="@+id/registerPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="Enter your password"
+                            android:textSize="13sp"
+                            android:textColor="#333333"
+                            android:textColorHint="#9E9E9E"
+                            android:inputType="textPassword" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@android:drawable/ic_menu_view"
+                            app:tint="#757575"
+                            android:contentDescription="Toggle Password" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Confirm Password Input -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Password"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A2B5C"
+                    android:layout_marginBottom="6dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:cardCornerRadius="24dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#F4F6F8"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="16dp">
+
+                        <EditText
+                            android:id="@+id/registerConfirmPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:hint="Re-enter your password"
+                            android:textSize="13sp"
+                            android:textColor="#333333"
+                            android:textColorHint="#9E9E9E"
+                            android:inputType="textPassword" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@android:drawable/ic_menu_view"
+                            app:tint="#757575"
+                            android:contentDescription="Toggle Confirm Password" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Register Action Button -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/registerButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/register"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#1A237E"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Footer: Already have an account? Log in -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/already_have_an_account"
+                        android:textSize="12sp"
+                        android:textColor="#555555" />
+
+                    <TextView
+                        android:id="@+id/loginLinkText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/log_in"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#1A237E"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

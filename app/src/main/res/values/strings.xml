@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">zikseven67</string>
+    <string name="login_title">Login</string>
+    <string name="sign_in_subtitle">Please enter your credentials</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">LOGIN</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="app_logo">App Logo</string>
+
+    <string name="mcs_waypoint_title">MCS Waypoint</string>
+    <string name="server_online">Online • Survival Alpha</string>
+    <string name="current_coords_label">CURRENT LOCATION</string>
+    <string name="current_coords">X: 1,024  Y: 64  Z: -850</string>
+    <string name="dimension_overworld">Overworld 🌍</string>
+    <string name="search_waypoints_hint">Search waypoints&#8230;</string>
+    <string name="saved_waypoints_header">Saved Waypoints (4)</string>
+    <string name="teleport">TELEPORT</string>
+
+    <string name="waypoint_home">Home Base 🏠</string>
+    <string name="waypoint_home_coords">X: 1,200  Y: 72  Z: -450</string>
+
+    <string name="waypoint_nether">Nether Portal Hub 🔥</string>
+    <string name="waypoint_nether_coords">X: 150  Y: 58  Z: -56</string>
+
+    <string name="waypoint_end">End City Portal 🔮</string>
+    <string name="waypoint_end_coords">X: 2,450  Y: 60  Z: 1,120</string>
+
+    <string name="waypoint_mine">Diamond Mine Shaft 💎</string>
+    <string name="waypoint_mine_coords">X: 420  Y: -58  Z: 180</string>
+
+    <string name="overworld_tag">Overworld</string>
+    <string name="nether_tag">Nether</string>
+    <string name="end_tag">The End</string>
+
+    <string name="dist_home">250m away</string>
+    <string name="dist_nether">1.2km away</string>
+    <string name="dist_end">3.4km away</string>
+    <string name="dist_mine">800m away</string>
+
+    <string name="manila_cathedral_school">MANILA CATHEDRAL SCHOOL</string>
+    <string name="paascu_accredited_ii">PAASCU ACCREDITED II</string>
+    <string name="school_logo">School Logo</string>
+    <string name="log_in">Log in</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="register">Register</string>
+</resources>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A2B5C"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Bar: Title & DateTime / School Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WAYLEDGE"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:letterSpacing="0.05" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCHOOL INFORMATION SYSTEM"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:letterSpacing="0.02" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2:00 PM Thursday"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="July 30, 2026"
+                    android:textSize="11sp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MANILA CATHEDRAL SCHOOL"
+                    android:textSize="9sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Search Bar -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_menu_search"
+                    app:tint="#0D47A1"
+                    android:contentDescription="Search" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ask Wayledge or type a location"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:layout_marginStart="12dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Welcome Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, User!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Grid Cards Row 1: Buildings & Facilities / Room Search -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <!-- Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#F8F9FA">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/icon_building"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@android:drawable/ic_menu_agenda"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Buildings" />
+
+                    <TextView
+                        android:id="@+id/title_building"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon_building"
+                        android:text="Buildings &amp;\nFacilities"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#0D47A1"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="7 Buildings\nview all location"
+                        android:textSize="10sp"
+                        android:textColor="#555555" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Open" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#F8F9FA">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/icon_room"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@android:drawable/ic_menu_myplaces"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Room Search" />
+
+                    <TextView
+                        android:id="@+id/title_room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon_room"
+                        android:text="Room Search"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#0D47A1"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="Search by\nRoom Number"
+                        android:textSize="10sp"
+                        android:textColor="#555555" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Open" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Grid Cards Row 2: Class Schedules / Announcements -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <!-- Card 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#F8F9FA">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/icon_schedule"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@android:drawable/ic_menu_today"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Schedules" />
+
+                    <TextView
+                        android:id="@+id/title_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon_schedule"
+                        android:text="Class Schedules"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#0D47A1"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="View today's\nclass schedules"
+                        android:textSize="10sp"
+                        android:textColor="#555555" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Open" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card 4 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#F8F9FA">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/icon_announcement"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@android:drawable/ic_menu_send"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Announcements" />
+
+                    <TextView
+                        android:id="@+id/title_announcement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon_announcement"
+                        android:text="Announcements"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#0D47A1"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="New Notices\nStay updated"
+                        android:textSize="10sp"
+                        android:textColor="#555555" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Open" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Grid Cards Row 3: Stock/Inventory / Emergency Exits -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <!-- Card 5 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#F8F9FA">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/icon_stock"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@android:drawable/ic_menu_manage"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Inventory" />
+
+                    <TextView
+                        android:id="@+id/title_stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon_stock"
+                        android:text="Stock/\nInventory"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#0D47A1"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="Check available\nequipment and supplies"
+                        android:textSize="10sp"
+                        android:textColor="#555555" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Open" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card 6 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="#F8F9FA">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/icon_emergency"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@android:drawable/ic_menu_directions"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Emergency Exits" />
+
+                    <TextView
+                        android:id="@+id/title_emergency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/icon_emergency"
+                        android:text="Emergency\nExits"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#0D47A1"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="View exit maps\nand Safety routes"
+                        android:textSize="10sp"
+                        android:textColor="#555555" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_media_play"
+                        app:tint="#0D47A1"
+                        android:contentDescription="Open" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Bottom Full Card: Campus Map -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#F8F9FA">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@android:drawable/ic_menu_mapmode"
+                            app:tint="#0D47A1"
+                            android:contentDescription="Map Mode" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Campus Map"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#0D47A1"
+                            android:layout_marginStart="8dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explore the school\ncampus map"
+                        android:textSize="12sp"
+                        android:textColor="#555555"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Mini Map Preview Placeholder -->
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:background="#D1E3F6" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
